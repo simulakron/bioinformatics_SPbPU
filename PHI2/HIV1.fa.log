@@ -1,0 +1,195 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Jan 21 2022
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    bio (AVX2, FMA3, 3 GB RAM)
+Command: iqtree2 -s HIV1.fa -m TEST -bb 1000 -nt AUTO
+Seed:    511763 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Nov  9 14:12:35 2025
+Kernel:  AVX+FMA - auto-detect threads (2 CPU cores detected)
+
+Reading alignment file HIV1.fa ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 14 sequences with 2353 columns, 1014 distinct patterns
+955 parsimony-informative, 529 singleton sites, 869 constant sites
+         Gap/Ambiguity  Composition  p-value
+   1  L20571     0.04%    passed     15.34%
+   2  F103818    0.04%    passed     48.20%
+   3  X52154     0.04%    passed     51.24%
+   4  U09127     0.04%    passed     84.74%
+   5  U27426     0.04%    passed     99.70%
+   6  U27445     0.00%    passed     97.49%
+   7  F067158    0.04%    passed     77.50%
+   8  U09126     0.04%    passed     59.91%
+   9  U27399     0.04%    passed     94.67%
+  10  U43386     0.04%    passed     92.61%
+  11  L02317     0.00%    passed     97.78%
+  12  F025763    0.04%    passed     92.43%
+  13  U08443     0.00%    passed     93.28%
+  14  F042106    0.04%    passed     99.59%
+****  TOTAL      0.03%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+Measuring multi-threading efficiency up to 2 CPU cores
+Increase to 10 rounds for branch lengths
+83 trees examined
+Threads: 1 / Time: 2.032 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -19068
+Threads: 2 / Time: 1.333 sec / Speedup: 1.524 / Efficiency: 76% / LogL: -19068
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -17322.593
+Optimal log-likelihood: -17322.283
+Rate parameters:  A-C: 2.74216  A-G: 5.06721  A-T: 0.95964  C-G: 1.20539  C-T: 5.43998  G-T: 1.00000
+Base frequencies:  A: 0.345  C: 0.174  G: 0.234  T: 0.246
+Proportion of invariable sites: 0.170
+Gamma shape alpha: 0.978
+Parameters optimization took 1 rounds (0.019 sec)
+Time for fast ML tree search: 0.126 seconds
+
+NOTE: ModelFinder requires 5 MB RAM!
+ModelFinder will test up to 88 DNA models (sample size: 2353) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         17943.557    33  35953.115    35954.082    36143.308
+  2  GTR+F+I       17459.521    34  34987.042    34988.069    35183.000
+  3  GTR+F+G4      17325.239    34  34718.478    34719.505    34914.435
+  4  GTR+F+I+G4    17322.200    35  34714.399    34715.487    34916.120
+  7  SYM+G4        17467.364    31  34996.729    34997.584    35175.396
+  8  SYM+I+G4      17467.462    32  34998.924    34999.835    35183.354
+ 11  TVM+F+G4      17325.607    33  34717.214    34718.181    34907.407
+ 12  TVM+F+I+G4    17322.628    34  34713.257    34714.283    34909.214
+ 15  TVMe+G4       17484.063    30  35028.126    35028.927    35201.030
+ 16  TVMe+I+G4     17482.824    31  35027.649    35028.504    35206.316
+ 19  TIM3+F+G4     17346.874    32  34757.749    34758.659    34942.179
+ 20  TIM3+F+I+G4   17343.708    33  34753.416    34754.384    34943.610
+ 23  TIM3e+G4      17516.333    29  35090.666    35091.415    35257.805
+ 24  TIM3e+I+G4    17514.872    30  35089.744    35090.545    35262.648
+ 27  TIM2+F+G4     17380.184    32  34824.369    34825.279    35008.799
+ 28  TIM2+F+I+G4   17376.678    33  34819.356    34820.324    35009.550
+ 31  TIM2e+G4      17485.174    29  35028.348    35029.097    35195.488
+ 32  TIM2e+I+G4    17485.284    30  35030.568    35031.369    35203.471
+ 35  TIM+F+G4      17371.920    32  34807.840    34808.751    34992.271
+ 36  TIM+F+I+G4    17367.061    33  34800.121    34801.089    34990.315
+ 39  TIMe+G4       17517.446    29  35092.892    35093.641    35260.032
+ 40  TIMe+I+G4     17515.202    30  35090.404    35091.205    35263.307
+ 43  TPM3u+F+G4    17347.107    31  34756.214    34757.069    34934.881
+ 44  TPM3u+F+I+G4  17343.963    32  34751.926    34752.836    34936.356
+ 47  TPM3+F+G4     17347.107    31  34756.214    34757.069    34934.881
+ 48  TPM3+F+I+G4   17343.963    32  34751.926    34752.836    34936.356
+ 51  TPM2u+F+G4    17380.317    31  34822.634    34823.489    35001.301
+ 52  TPM2u+F+I+G4  17376.837    32  34817.674    34818.584    35002.104
+ 55  TPM2+F+G4     17380.317    31  34822.634    34823.489    35001.301
+ 56  TPM2+F+I+G4   17376.837    32  34817.674    34818.584    35002.104
+ 59  K3Pu+F+G4     17371.997    31  34805.995    34806.849    34984.661
+ 60  K3Pu+F+I+G4   17367.166    32  34798.332    34799.242    34982.762
+ 63  K3P+G4        17532.438    28  35120.875    35121.574    35282.252
+ 64  K3P+I+G4      17528.812    29  35115.625    35116.374    35282.765
+ 67  TN+F+G4       17393.216    31  34848.432    34849.286    35027.099
+ 68  TN+F+I+G4     17389.080    32  34842.161    34843.071    35026.591
+ 71  TNe+G4        17528.310    28  35112.620    35113.319    35273.996
+ 72  TNe+I+G4      17526.487    29  35110.975    35111.724    35278.115
+ 75  HKY+F+G4      17393.286    30  34846.572    34847.373    35019.475
+ 76  HKY+F+I+G4    17389.183    31  34840.366    34841.220    35019.032
+ 79  K2P+G4        17543.698    27  35141.397    35142.047    35297.010
+ 80  K2P+I+G4      17540.492    28  35136.984    35137.683    35298.360
+ 83  F81+F+G4      17826.973    29  35711.946    35712.695    35879.086
+ 84  F81+F+I+G4    17823.070    30  35706.140    35706.941    35879.044
+ 87  JC+G4         17982.323    26  36016.647    36017.250    36166.496
+ 88  JC+I+G4       17978.834    27  36011.667    36012.318    36167.280
+Akaike Information Criterion:           TVM+F+I+G4
+Corrected Akaike Information Criterion: TVM+F+I+G4
+Bayesian Information Criterion:         TVM+F+G4
+Best-fit model: TVM+F+G4 chosen according to BIC
+
+All model information printed to HIV1.fa.model.gz
+CPU time for ModelFinder: 8.036 seconds (0h:0m:8s)
+Wall-clock time for ModelFinder: 5.123 seconds (0h:0m:5s)
+Generating 1000 samples for ultrafast bootstrap (seed: 511763)...
+
+NOTE: 5 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -17325.607
+Optimal log-likelihood: -17325.605
+Rate parameters:  A-C: 2.80895  A-G: 5.36206  A-T: 0.99650  C-G: 1.22456  C-T: 5.36206  G-T: 1.00000
+Base frequencies:  A: 0.345  C: 0.174  G: 0.234  T: 0.246
+Gamma shape alpha: 0.578
+Parameters optimization took 1 rounds (0.012 sec)
+Computing ML distances based on estimated model parameters... 0.000 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -17330.259
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.321 second
+Computing log-likelihood of 97 initial trees ... 0.261 seconds
+Current best score: -17325.605
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -17325.605
+Iteration 10 / LogL: -17325.903 / Time: 0h:0m:1s
+Iteration 20 / LogL: -17326.455 / Time: 0h:0m:1s
+Finish initializing candidate tree set (2)
+Current best tree score: -17325.605 / CPU time: 1.410
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -17325.629 / Time: 0h:0m:1s (0h:0m:4s left)
+Iteration 40 / LogL: -17326.186 / Time: 0h:0m:2s (0h:0m:3s left)
+Iteration 50 / LogL: -17325.724 / Time: 0h:0m:2s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -17355.954
+Iteration 60 / LogL: -17361.101 / Time: 0h:0m:3s (0h:0m:2s left)
+Iteration 70 / LogL: -17361.089 / Time: 0h:0m:3s (0h:0m:1s left)
+Iteration 80 / LogL: -17363.399 / Time: 0h:0m:4s (0h:0m:1s left)
+Iteration 90 / LogL: -17362.721 / Time: 0h:0m:4s (0h:0m:0s left)
+Iteration 100 / LogL: -17361.200 / Time: 0h:0m:4s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -17355.954
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:5s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -17325.605
+Optimal log-likelihood: -17325.605
+Rate parameters:  A-C: 2.80831  A-G: 5.36241  A-T: 0.99724  C-G: 1.22436  C-T: 5.36241  G-T: 1.00000
+Base frequencies:  A: 0.345  C: 0.174  G: 0.234  T: 0.246
+Gamma shape alpha: 0.578
+Parameters optimization took 1 rounds (0.014 sec)
+BEST SCORE FOUND : -17325.605
+Creating bootstrap support values...
+Split supports printed to NEXUS file HIV1.fa.splits.nex
+Total tree length: 2.789
+
+Total number of iterations: 102
+CPU time used for tree search: 9.600 sec (0h:0m:9s)
+Wall-clock time used for tree search: 5.030 sec (0h:0m:5s)
+Total CPU time used: 9.823 sec (0h:0m:9s)
+Total wall-clock time used: 5.209 sec (0h:0m:5s)
+
+Computing bootstrap consensus tree...
+Reading input file HIV1.fa.splits.nex...
+14 taxa and 43 splits.
+Consensus tree written to HIV1.fa.contree
+Reading input trees file HIV1.fa.contree
+Log-likelihood of consensus tree: -17325.605
+
+Analysis results written to: 
+  IQ-TREE report:                HIV1.fa.iqtree
+  Maximum-likelihood tree:       HIV1.fa.treefile
+  Likelihood distances:          HIV1.fa.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          HIV1.fa.splits.nex
+  Consensus tree:                HIV1.fa.contree
+  Screen log file:               HIV1.fa.log
+
+Date and Time: Sun Nov  9 14:12:45 2025
