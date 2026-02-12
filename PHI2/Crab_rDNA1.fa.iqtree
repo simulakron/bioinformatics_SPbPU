@@ -1,0 +1,237 @@
+IQ-TREE 2.0.7 built Jan 21 2022
+
+Input file name: Crab_rDNA1.fa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 726537
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 13 sequences with 421 nucleotide sites
+Number of constant sites: 232 (= 55.1069% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 232 (= 55.1069% of all sites)
+Number of parsimony informative sites: 115
+Number of distinct site patterns: 149
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TPM3+F+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TPM3+F+G4         -1925.257    3908.514 +    0.224    3912.964 +    0.255    4025.751 +    0.418
+TPM3u+F+G4        -1925.258    3908.515 +    0.224    3912.965 +    0.255    4025.752 +    0.418
+HKY+F+G4          -1930.212    3916.423 -  0.00429    3920.566 -  0.00571    4029.617 +   0.0605
+TIM3+F+G4         -1924.641    3909.282 +    0.153    3914.051 +    0.148    4030.561 -   0.0377
+TPM3u+F+I+G4      -1925.455    3910.910 +   0.0676    3915.679 +   0.0657    4032.189 -   0.0167
+TPM3+F+I+G4       -1925.455    3910.910 +   0.0676    3915.679 +   0.0657    4032.189 -   0.0167
+K3Pu+F+G4         -1929.313    3916.625 -  0.00388    3921.076 -  0.00442    4033.862 -  0.00724
+TPM2u+F+G4        -1929.628    3917.256 -  0.00283    3921.706 -  0.00323    4034.492 -  0.00528
+TPM2+F+G4         -1929.628    3917.256 -  0.00283    3921.706 -  0.00323    4034.492 -  0.00528
+TN+F+G4           -1929.679    3917.357 -  0.00269    3921.807 -  0.00307    4034.594 -  0.00502
+TVM+F+G4          -1924.117    3910.234 +   0.0948    3915.335 +   0.0781    4035.556 -   0.0031
+HKY+F+I+G4        -1930.205    3918.409 -  0.00159    3922.859 -  0.00181    4035.645 -  0.00297
+TIM3+F+I+G4       -1925.064    3912.129 -   0.0368    3917.229 -   0.0303    4037.450 -   0.0012
+TIM+F+G4          -1928.786    3917.571 -  0.00242    3922.340 -  0.00235    4038.850 - 0.000598
+TIM2+F+G4         -1929.154    3918.307 -  0.00167    3923.077 -  0.00163    4039.586 - 0.000414
+K3Pu+F+I+G4       -1929.346    3918.693 -  0.00138    3923.462 -  0.00134    4039.972 - 0.000341
+GTR+F+G4          -1923.538    3911.076 +   0.0622    3916.519 -   0.0432    4040.440 -  0.00027
+TPM2u+F+I+G4      -1929.674    3919.347 - 0.000995    3924.117 - 0.000967    4040.626 - 0.000246
+TPM2+F+I+G4       -1929.674    3919.347 - 0.000995    3924.117 - 0.000967    4040.626 - 0.000246
+TN+F+I+G4         -1929.915    3919.830 - 0.000781    3924.600 - 0.000759    4041.109 - 0.000193
+TVM+F+I+G4        -1924.372    3912.744 -    0.027    3918.187 -   0.0187    4042.108 - 0.000117
+TIM+F+I+G4        -1929.055    3920.110 -  0.00068    3925.210 -  0.00056    4045.431 - 2.23e-05
+TIM2+F+I+G4       -1929.433    3920.866 - 0.000466    3925.966 - 0.000384    4046.187 - 1.53e-05
+GTR+F+I+G4        -1923.989    3913.978 -   0.0146    3919.776 -  0.00847    4047.385 - 8.38e-06
+GTR+F+R2          -1927.560    3921.119 -  0.00041    3926.918 - 0.000238    4054.526 - 2.36e-07
+GTR+F+R3          -1924.540    3919.079 -  0.00114    3925.625 - 0.000455    4060.572 - 1.15e-08
+GTR+F+I           -1939.219    3942.438 - 9.63e-09    3947.882 - 6.68e-09    4071.803 - 4.18e-11
+F81+F+G4          -1975.211    4004.421 - 3.34e-22    4008.269 - 5.15e-22    4113.573 - 3.56e-20
+F81+F+I+G4        -1975.181    4006.361 - 1.27e-22    4010.504 - 1.69e-22    4119.555 - 1.79e-21
+SYM+G4            -1982.212    4022.423 - 4.12e-26    4026.873 -  4.7e-26    4139.660 - 7.69e-26
+TVMe+G4           -1985.764    4027.528 - 3.21e-27    4031.671 - 4.27e-27    4140.722 - 4.52e-26
+TIM3e+G4          -1990.558    4035.116 - 7.23e-29    4038.963 - 1.11e-28    4144.267 - 7.69e-27
+SYM+I+G4          -1982.450    4024.900 - 1.19e-26    4029.670 - 1.16e-26    4146.179 - 2.95e-27
+TVMe+I+G4         -1985.956    4029.913 - 9.75e-28    4034.363 - 1.11e-27    4147.149 - 1.82e-27
+TIM3e+I+G4        -1990.784    4037.567 - 2.12e-29    4041.710 - 2.82e-29    4150.761 - 2.99e-28
+TIMe+G4           -2004.338    4062.675 - 7.49e-35    4066.522 - 1.15e-34    4171.826 - 7.97e-33
+K3P+G4            -2009.396    4070.792 - 1.29e-36    4074.355 -  2.3e-36    4175.900 - 1.04e-33
+TIMe+I+G4         -2004.529    4065.058 - 2.28e-35    4069.201 - 3.03e-35    4178.252 - 3.21e-34
+K3P+I+G4          -2009.408    4072.816 - 4.71e-37    4076.663 - 7.25e-37    4181.967 -    5e-35
+TIM2e+G4          -2010.490    4074.981 - 1.59e-37    4078.828 - 2.46e-37    4184.132 - 1.69e-35
+TIM2e+I+G4        -2010.870    4077.740 - 4.01e-38    4081.883 - 5.33e-38    4190.934 - 5.65e-37
+TNe+G4            -2016.925    4085.851 - 6.95e-40    4089.414 - 1.23e-39    4190.959 - 5.58e-37
+K2P+G4            -2022.133    4094.266 - 1.03e-41    4097.557 - 2.11e-41    4195.331 - 6.27e-38
+TNe+I+G4          -2017.238    4088.476 - 1.87e-40    4092.324 - 2.88e-40    4197.627 - 1.99e-38
+K2P+I+G4          -2022.221    4096.443 - 3.48e-42    4100.006 - 6.19e-42    4201.551 -  2.8e-39
+GTR+F             -2009.826    4081.653 - 5.67e-39    4086.753 - 4.67e-39    4206.974 - 1.86e-40
+JC+G4             -2044.214    4136.428 - 7.23e-51    4139.458 - 1.68e-50    4233.451 - 3.31e-46
+JC+I+G4           -2044.296    4138.592 - 2.45e-51    4141.883 - 4.99e-51    4239.658 - 1.49e-47
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TPM3+F+G4
+
+Rate parameter R:
+
+  A-C: 0.1787
+  A-G: 3.7471
+  A-T: 1.0000
+  C-G: 0.1787
+  C-T: 3.7471
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.366
+  pi(C) = 0.1082
+  pi(G) = 0.1836
+  pi(T) = 0.3422
+
+Rate matrix Q:
+
+  A   -0.8905   0.01641    0.5837    0.2903
+  C   0.05549    -1.171   0.02783     1.088
+  G     1.164   0.01641    -1.471    0.2903
+  T    0.3106    0.3441    0.1558   -0.8105
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.289
+
+ Category  Relative_rate  Proportion
+  1         0.004447       0.25
+  2         0.09598        0.25
+  3         0.5769         0.25
+  4         3.323          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1925.2568 (s.e. 73.5035)
+Unconstrained log-likelihood (without tree): -1579.4332
+Number of free parameters (#branches + #model parameters): 29
+Akaike information criterion (AIC) score: 3908.5136
+Corrected Akaike information criterion (AICc) score: 3912.9637
+Bayesian information criterion (BIC) score: 4025.7500
+
+Total tree length (sum of branch lengths): 2.0902
+Sum of internal branch lengths: 0.9317 (44.5757% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Artemia_salina' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-----------------------------------------------------------Artemia_salina
+|
+|                              +------------------Clibanarius_vittatus
++------------------------------| (97)
+|                              +-----------------------Coenobita_sp.
+|
+|                                     +--Lithodes_aequispina
+|                                  +--| (58)
+|                                  |  |        +--Ellasochirus_tenuimanus
+|                                  |  |     +--| (96)
+|                                  |  |     |  |  +--Pagurus_bernhardus
+|                                  |  |     |  +--| (86)
+|                                  |  |     |     +**Pagurus_acadianus
+|                                  |  |  +--| (93)
+|                                  |  |  |  +--Labidochirus_splendescens
+|                                  |  +--| (68)
+|                                  |     |           +--Pagurus_pollicaris__NE_
+|                                  |     |        +--| (95)
+|                                  |     |        |  +**Pagurus_pollicaris__GU_
+|                                  |     +--------| (97)
+|                                  |              |  +--Pagurus_longicarpus__NE_
+|                                  |              +--| (97)
+|                                  |                 +**Pagurus_longicarpus__GU_
++----------------------------------| (98)
+                                   +**Paralithodes_camtschatica
+
+Tree in newick format:
+
+(Artemia_salina:0.6156295943,(Clibanarius_vittatus:0.2007927242,Coenobita_sp.:0.2527832353)97:0.3248580666,((Lithodes_aequispina:0.0127314955,(((Ellasochirus_tenuimanus:0.0142106912,(Pagurus_bernhardus:0.0061411013,Pagurus_acadianus:0.0018862169)86:0.0127669274)96:0.0306705005,Labidochirus_splendescens:0.0294867577)93:0.0234863038,((Pagurus_pollicaris__NE_:0.0204162633,Pagurus_pollicaris__GU_:0.0017158041)95:0.0267534132,(Pagurus_longicarpus__NE_:0.0026873260,Pagurus_longicarpus__GU_:0.0000010322)97:0.0258073626)97:0.0934723099)68:0.0246772506)58:0.0066468717,Paralithodes_camtschatica:0.0000020682)98:0.3625850578);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1925.257181
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----------------------------------------------------------Artemia_salina
+|
+|                              +------------------Clibanarius_vittatus
++------------------------------| (97)
+|                              +-----------------------Coenobita_sp.
+|
+|                                     +--Lithodes_aequispina
+|                                  +--| (58)
+|                                  |  |        +--Ellasochirus_tenuimanus
+|                                  |  |     +--| (96)
+|                                  |  |     |  |  +--Pagurus_bernhardus
+|                                  |  |     |  +--| (86)
+|                                  |  |     |     +--Pagurus_acadianus
+|                                  |  |  +--| (93)
+|                                  |  |  |  +--Labidochirus_splendescens
+|                                  |  +--| (68)
+|                                  |     |           +--Pagurus_pollicaris__NE_
+|                                  |     |        +--| (95)
+|                                  |     |        |  +--Pagurus_pollicaris__GU_
+|                                  |     +--------| (97)
+|                                  |              |  +--Pagurus_longicarpus__NE_
+|                                  |              +--| (97)
+|                                  |                 +--Pagurus_longicarpus__GU_
++----------------------------------| (98)
+                                   +--Paralithodes_camtschatica
+
+
+Consensus tree in newick format: 
+
+(Artemia_salina:0.6158493795,(Clibanarius_vittatus:0.2010928700,Coenobita_sp.:0.2526418449)97:0.3248317931,((Lithodes_aequispina:0.0127344917,(((Ellasochirus_tenuimanus:0.0142112098,(Pagurus_bernhardus:0.0061427874,Pagurus_acadianus:0.0018856459)86:0.0127746888)96:0.0306783600,Labidochirus_splendescens:0.0294908276)93:0.0234873918,((Pagurus_pollicaris__NE_:0.0204168660,Pagurus_pollicaris__GU_:0.0017190573)95:0.0267470188,(Pagurus_longicarpus__NE_:0.0026875955,Pagurus_longicarpus__GU_:0.0000021681)97:0.0258176960)97:0.0934895601)68:0.0246817165)58:0.0066479125,Paralithodes_camtschatica:0.0000021720)98:0.3626237127);
+
+TIME STAMP
+----------
+
+Date and time: Wed Nov 12 16:57:35 2025
+Total CPU time used: 3.689866 seconds (0h:0m:3s)
+Total wall-clock time used: 3.838645323 seconds (0h:0m:3s)
+
